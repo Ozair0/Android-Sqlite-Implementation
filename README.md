@@ -2,6 +2,8 @@
 
 <h1>Pics of the App</h1>
 <p float="left">
-  <img src="Pics\20190630_084202.jpg" width="400" />
-  <img src="Pics\Screenshot_20190630-084137_EmployeInfo.jpg" width="400" />
+    <p>Displaying data from the database view</p>
+    <img src="Pics\Screenshot_20190630-084137_EmployeInfo.jpg" width="400" />
+    <p>Insering data into the database view</p>
+    <img src="Pics\20190630_084202.jpg" width="400" />
 </p>
