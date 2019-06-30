@@ -1,0 +1,1 @@
+<h1>Simple Android Sqlite Application which can store data and images in Sqlite database and then can be retrieved back from Sqlite database</h1>
