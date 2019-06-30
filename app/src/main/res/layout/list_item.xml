@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+	<RelativeLayout
+		android:background="@drawable/bgitem"
+		android:layout_margin="20dp"
+		android:padding="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	<TextView
+		android:id="@+id/EmployeeNameTextView"
+		android:layout_width="240dp"
+		android:layout_height="wrap_content"
+		android:text="Employee Name"
+		android:textSize="20sp" />
+
+	<TextView
+		android:id="@+id/ProfileDetailTextView"
+		android:layout_width="240dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="25dp"
+		android:text="Profile Detail" />
+
+	<RatingBar
+		android:id="@+id/EmployeeRatingBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/ProfileDetailTextView"
+		android:layout_marginTop="20dp"
+		android:theme="@style/RatingBar"
+		android:numStars="5"
+		android:rating="3"
+		android:isIndicator="true"
+		android:scaleX="0.8"
+		android:scaleY="0.8" />
+	<ImageView
+		android:id="@+id/EmployeeImageView"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_marginLeft="10dp"
+		android:layout_toRightOf="@id/EmployeeNameTextView"
+		android:src="@drawable/a" />
+
+	<Button
+		android:layout_marginTop="10dp"
+		android:id="@+id/DeleteData"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/EmployeeImageView"
+		android:layout_marginLeft="250dp"
+		android:background="@drawable/btnbg"
+		android:text="Delete" />
+</RelativeLayout>
+</RelativeLayout>

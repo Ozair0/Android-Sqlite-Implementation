@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/addbg"
+	tools:context=".AddUsers">
+
+	<EditText
+		android:id="@+id/userName"
+		style="@style/MyEditTextStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:hint="Name"
+		android:inputType="text"
+		android:textColor="#000" />
+	<EditText
+		android:id="@+id/userInfo"
+		style="@style/MyEditTextStyle"
+		android:layout_below="@id/userName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:hint="User Info"
+		android:inputType="text"
+		android:textColor="#000" />
+	<RatingBar
+		android:id="@+id/UserRatingBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/userInfo"
+		android:layout_marginTop="30dp"
+		android:layout_centerHorizontal="true"
+		android:theme="@style/RatingBarUserAdd"
+		android:numStars="5"
+		android:rating="3"
+		android:scaleX="1"
+		android:scaleY="1" />
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnSelect"
+		android:textColor="#FFF"
+		android:background="@drawable/btnselect"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="50dp"
+		android:layout_below="@id/UserRatingBar"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="Select or Capture Image" />
+	<Button
+		android:layout_marginTop="70dp"
+		android:id="@+id/AddUserData"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btnSelect"
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/btnadddata"
+		android:textSize="20sp"
+		android:text=" Add User To The Database " />
+</RelativeLayout>

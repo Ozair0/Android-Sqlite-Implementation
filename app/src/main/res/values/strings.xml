@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">EmployeInfo</string>
+	<string name="title_activity_add_data">AddData</string>
+</resources>
