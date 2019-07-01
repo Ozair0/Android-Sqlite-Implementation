@@ -72,6 +72,7 @@ public class AddUsers extends AppCompatActivity {
                 Uri selectedImage = data.getData();
                 InputStream iStream =   getContentResolver().openInputStream(selectedImage);
                 byteArray = getBytes(iStream);
+
             } catch (Exception e) {
                 e.printStackTrace();
                 Toast.makeText(this, "Something went wrong", Toast.LENGTH_LONG).show();
@@ -90,6 +91,7 @@ public class AddUsers extends AppCompatActivity {
         while ((len = inputStream.read(buffer)) != -1) {
             byteBuffer.write(buffer, 0, len);
         }
+        inputStream.close();
         return byteBuffer.toByteArray();
     }
 }
